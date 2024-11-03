@@ -2,4 +2,4 @@
 
 - 이건 `Typora` 를 이용해서 진행해보고 있음.
 
-![유튜브로고(최신)](./images/2024-11-04-image-tutorial/youtube-logo.jpeg)
+![유튜브로고(최신)](images/2024-11-04-image-tutorial/youtube-logo.jpeg)
