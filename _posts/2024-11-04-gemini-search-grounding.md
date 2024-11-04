@@ -2,6 +2,7 @@
 layout: single
 title: "[Gemini] Search Grounding tutorial"
 categories: coding
+tag: python, gemini
 ---
 
 # [Made by PARK JOON](https://bio.link/joonpark)
