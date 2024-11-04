@@ -16,4 +16,4 @@ sidebar:
 
 
 
-![CleanShot 2024-11-04 at 15.04.29@2x](../images/2024-11-04-image-tutorial/CleanShot 2024-11-04 at 15.04.29@2x.png)
+![CleanShot 2024-11-04 at 15.04.29@2x]({{site.url}}/images/2024-11-04-image-tutorial/CleanShot 2024-11-04 at 15.04.29@2x.png)
