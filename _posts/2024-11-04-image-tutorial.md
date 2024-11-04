@@ -7,6 +7,7 @@ toc: true
 author_profile: false
 sidebar:
     nav: "docs"
+# search: false   # 검색해도 이 포스팅이 걸리지 않게 함.
 ---
 
 ## 이미지 삽입 예시
