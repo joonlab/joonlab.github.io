@@ -5,6 +5,7 @@ categories: 테스트
 tag: [css, 테스트]
 toc: true
 toc_sticky: true
+toc_label: 목차
 author_profile: false
 # sidebar:
 #     nav: "docs"
