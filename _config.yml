@@ -122,44 +122,39 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
+      url: "mailto:wns9133@gmail.com"
+    - label: "Bio"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://bio.link/joonpark"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      icon: "fab fa-fw fa-github"      
+    - label: "X"
+      icon: "fa-brands fa-square-x-twitter"
+      url: "https://x.com/joonlab98"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://www.instagram.com/j00n_98/"
+    - label: "Threads"
+      icon: "fa-brands fa-threads"
+      url: "https://www.threads.net/@j00n_98"      
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
+    - label: "Bio"
+      icon: "fas fa-fw fa-link"
+      url: "https://bio.link/joonpark"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
+      icon: "fab fa-fw fa-github"      
+    - label: "X"
+      icon: "fa-brands fa-square-x-twitter"
+      url: "https://x.com/joonlab98"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://www.instagram.com/j00n_98/"
+    - label: "Threads"
+      icon: "fa-brands fa-threads"
+      url: "https://www.threads.net/@j00n_98"   
 
 
 # Reading Files
