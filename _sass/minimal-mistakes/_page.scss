@@ -36,7 +36,8 @@ body {
 .page {
   @include breakpoint($large) {
     float: inline-end;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+    // width: calc(100% - #{$right-sidebar-width-narrow}); // 디폴트
+    width: calc(100%);
     padding-inline-end: $right-sidebar-width-narrow;
   }
 
