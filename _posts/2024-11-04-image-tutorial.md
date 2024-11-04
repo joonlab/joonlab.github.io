@@ -12,4 +12,8 @@ sidebar:
 
 ## 이미지 삽입 예시
 
-![image-20241104073010608](../images/2024-11-04-image-tutorial/image-20241104073010608.png)
+![image-20241104073010608]({{site.url}}/images/2024-11-04-image-tutorial/image-20241104073010608.png)
+
+
+
+![CleanShot 2024-11-04 at 15.04.29@2x](../images/2024-11-04-image-tutorial/CleanShot 2024-11-04 at 15.04.29@2x.png)
