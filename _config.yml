@@ -116,7 +116,7 @@ analytics:
 author:
   name             : "Park Joon"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "[https://bio.link/joonpark](https://bio.link/joonpark)"
+  bio              : "[About Me](https://bio.link/joonpark)"
   location         : "Kyoto, Japan"
   email            : "wns9133@gmail.com"
   links:
