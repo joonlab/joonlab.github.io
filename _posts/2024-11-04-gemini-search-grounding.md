@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "[Gemini] Search Grounding tutorial"
+categories: coding
 ---
 
 # [Made by PARK JOON](https://bio.link/joonpark)
