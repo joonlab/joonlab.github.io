@@ -6,7 +6,7 @@ tag: [python, claude, anthropic]
 toc: true
 author_profile: false
 sidebar:
-    nave: "docs"
+    nav: "docs"
 ---
 
 

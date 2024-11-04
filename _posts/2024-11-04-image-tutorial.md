@@ -6,7 +6,7 @@ tags: [image, 이미지, 테스트]
 toc: true
 author_profile: false
 sidebar:
-    nave: "docs"
+    nav: "docs"
 ---
 
 ## 이미지 삽입 예시
