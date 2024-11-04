@@ -44,7 +44,7 @@ body {
   @include breakpoint($x-large) {
     // width: calc(100% - #{$right-sidebar-width}); // 디폴트
     width: calc(100%);
-    padding-inline-end: $right-sidebar-width;
+    padding-inline-end: $right-sidebar-width;3
   }
 
   .page__inner-wrap {

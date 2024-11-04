@@ -4,6 +4,7 @@ title: "CSS 수정 튜토리얼"
 categories: 테스트
 tag: [css, 테스트]
 toc: true
+toc_sticky: true
 author_profile: false
 # sidebar:
 #     nav: "docs"
@@ -15,7 +16,7 @@ author_profile: false
 공지사항입니다!
 {: .notice}
 
-## 예시 2 - primary
+## 예시 2 - primary 
 
 공지사항입니다!
 {: .notice--primary}
