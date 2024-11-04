@@ -41,7 +41,7 @@ ANTHROPIC_API_KEY = userdata.get('ANTHROPIC_API_KEY')
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 ```
 
-#### 참고 이미지
+## 참고 이미지
 
 [코랩 환경 변수 설정 참고 이미지](https://i.imghippo.com/files/nkS8F1729430186.png)
 
