@@ -116,17 +116,13 @@ analytics:
 author:
   name             : "Park Joon"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : |
+  bio              : >
     🇰🇷🇯🇵
     Mathematics🎓
     Intelligence Science & Technology💻
-    bio.link/joonpark
   location         : "Kyoto, Japan"
   email            : "wns9133@gmail.com"
   links:
-- label: "Email"
-      icon: "fa-solid fa-envelope-square"
-      url: "mailto:wns9133@gmail.com"
     - label: "Bio"
       icon: "fa-solid fa-link"
       url: "https://bio.link/joonpark"
@@ -134,7 +130,7 @@ author:
       icon: "fa-brands fa-github"
       url: "https://github.com/joonlab"
     - label: "X"
-      icon: "fa-brands fa-square-x-twitter"
+      icon: "fa-brands fa-x-twitter"
       url: "https://x.com/joonlab98"
     - label: "Instagram"
       icon: "fa-brands fa-instagram"
@@ -153,7 +149,7 @@ footer:
       icon: "fa-brands fa-github"
       url: "https://github.com/joonlab"
     - label: "X"
-      icon: "fa-brands fa-square-x-twitter"
+      icon: "fa-brands fa-x-twitter"
       url: "https://x.com/joonlab98"
     - label: "Instagram"
       icon: "fa-brands fa-instagram"
