@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "이미지 삽입 테스트"
+title: "공지사항 테스트"
 categories: 테스트
-tags: [image, 이미지, 테스트]
+tags: [테스트]
 toc: true
 author_profile: false
 sidebar:
@@ -15,32 +15,38 @@ sidebar:
 공지사항입니다!
 {: .notice}
 
-## 예시 1 - default
+## 예시 2 - primary
 
 공지사항입니다!
 {: .notice--primary}
 
-## 예시 1 - default
+## 예시 3 - info
 
 공지사항입니다!
-{: .notice-info}
+{: .notice--info}
 
-## 예시 1 - default
-
-공지사항입니다!
-{: .notice}
-
-## 예시 1 - default
+## 예시 4 - warning
 
 공지사항입니다!
-{: .notice}
+{: .notice--warning}
 
-## 예시 1 - default
-
-공지사항입니다!
-{: .notice}
-
-## 예시 1 - default
+## 예시 5 - success
 
 공지사항입니다!
-{: .notice}
+{: .notice--success}
+
+## 예시 6 - danger
+
+공지사항입니다!
+{: .notice--danger}
+
+## 예시 7 - 단락에 대해서 적용
+
+<div class="notice">
+<h2>공지사항입니다!</h2>
+<ul>
+    <li>공지사항 순서 1</li>
+    <li>공지사항 순서 2</li>
+    <li>공지사항 순서 3</li>
+</ul>
+</div>
