@@ -115,13 +115,9 @@ analytics:
 # Site Author
 author:
   name             : "Park Joon"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : >
-    🇰🇷🇯🇵
-    Mathematics🎓
-    Intelligence Science & Technology💻
+  avatar           : "/assets/images/joonlab-logo.jpeg"
+  bio              : "🇰🇷🇯🇵<br>Mathematics🎓<br>Intelligence Science & Technology💻<br>bio.link/joonpark"
   location         : "Kyoto, Japan"
-  # email            : "wns9133@gmail.com"
   links:
     - label: "E-mail"
       icon: "fas fa-fw fa-envelope-square"
