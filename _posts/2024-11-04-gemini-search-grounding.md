@@ -4,6 +4,7 @@ title: "[Gemini] Search Grounding tutorial"
 categories: coding
 tag: [python, gemini]
 toc: true
+author_profile: false
 ---
 
 # [Made by PARK JOON](https://bio.link/joonpark)

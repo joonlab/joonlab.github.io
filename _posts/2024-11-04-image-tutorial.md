@@ -4,6 +4,7 @@ title: "이미지 삽입 테스트"
 categories: 테스트
 tags: [image, 이미지, 테스트]
 toc: true
+author_profile: false
 ---
 
 ## 이미지 삽입 예시
