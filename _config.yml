@@ -121,8 +121,11 @@ author:
     Mathematics🎓
     Intelligence Science & Technology💻
   location         : "Kyoto, Japan"
-  email            : "wns9133@gmail.com"
+  # email            : "wns9133@gmail.com"
   links:
+    - label: "E-mail"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:wns9133@gmail.com"
     - label: "Bio"
       icon: "fa-solid fa-link"
       url: "https://bio.link/joonpark"
