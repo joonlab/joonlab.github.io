@@ -5,6 +5,8 @@ categories: coding
 tag: [python, gemini]
 toc: true
 author_profile: false
+sidebar:
+    nave: "docs"
 ---
 
 # [Made by PARK JOON](https://bio.link/joonpark)
