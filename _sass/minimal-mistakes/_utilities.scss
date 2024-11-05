@@ -163,6 +163,7 @@ $text-alignments: left, right, start, end, center, justify;
 .align-center {
   display: block;
   margin-inline: auto;
+  width: fit-content; /* 또는 특정 너비 값 */
 }
 
 /* file page content container */
@@ -565,4 +566,8 @@ pre {
   &:hover .clipboard-copy-button {
     opacity: 1;
   }
+}
+
+.img-width-half {
+  width: 50%;
 }

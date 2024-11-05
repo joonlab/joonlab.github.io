@@ -12,6 +12,8 @@ sidebar:
 #     - self-intro/soomgo
 ---
 
+중앙정렬. 
+{: .align-center}
 
 # 박준
 
