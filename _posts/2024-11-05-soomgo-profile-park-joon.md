@@ -8,6 +8,8 @@ author_profile: false
 sidebar:
     nav: "docs"
 # search: false   # 검색해도 이 포스팅이 걸리지 않게 함.    
+# redirect_from:
+#     - self-intro/soomgo
 ---
 
 
@@ -20,16 +22,6 @@ sidebar:
 - **평점**: 5.0
 - **리뷰수**: 32
 - **고용수**: 38
-
----
-
-## 활동 지역
-
-- **서울 은평구 수색로 300 (수색동, DMC롯데캐슬더퍼스트)**
-
-## 이동 가능 거리
-
-- **전국 이동 가능**
 
 ---
 
@@ -65,7 +57,7 @@ sidebar:
 ### LLM 서비스 기획 및 개발
 
 - **기간**: 2024년 1월 - 현재 · 11개월
-- **내용**: Writing・Reading・연구 관련 LLM 서비스 기획 및 개발
+- **내용**: LLM 서비스 기획 및 개발
 
 ### 강사
 
@@ -79,7 +71,7 @@ sidebar:
 - **Kyoto University**
 
   - **기간**: 2022년 10월 - 현재
-  - **전공**: Informatics
+  - **전공**: Intelligence Science and Technology
 
 ---
 
