@@ -1,13 +1,15 @@
 ---
 layout: single
 title: "유튜브 영상 임베딩 튜토리얼"
-categories: 테스트
+categories: test
 tag: [youtube, 테스트]
 toc: true
 author_profile: false
 sidebar:
     nav: "docs"
 # search: false   # 검색해도 이 포스팅이 걸리지 않게 함.    
+redirect_from:
+  - /test1/youtube
 ---
 
 ## 유튜브 영상 예시 1
