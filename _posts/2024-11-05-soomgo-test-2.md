@@ -9,7 +9,7 @@ sidebar:
     nav: "docs"
 # search: false   # 검색해도 이 포스팅이 걸리지 않게 함.    
 redirect_from:
-  - /self/soomgo/
+  - /self/soomgo
 ---
 
 숨고 리다이렉트 테스트입니다.
