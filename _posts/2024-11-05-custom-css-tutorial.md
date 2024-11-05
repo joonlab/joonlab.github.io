@@ -5,7 +5,7 @@ categories: test
 toc: true
 author_profile: false
 sidebar:
-    nav: "docs"
+    nav: "counts"
 redirect_from:
   - /test/css
 ---

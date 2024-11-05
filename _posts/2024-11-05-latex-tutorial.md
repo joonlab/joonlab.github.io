@@ -6,7 +6,7 @@ tags: [latex, 수식, 테스트]
 toc: true
 author_profile: false
 sidebar:
-    nav: "docs"
+    nav: "counts"
 use_math: true
 ---
 

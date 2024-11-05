@@ -8,8 +8,8 @@ toc_sticky: true
 toc_label: 목차
 toc_icon: "fas fa-th-list"
 author_profile: false
-# sidebar:
-#     nav: "docs"
+sidebar:
+    nav: "counts"
 # search: false   # 검색해도 이 포스팅이 걸리지 않게 함.    
 ---
 

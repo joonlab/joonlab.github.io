@@ -6,7 +6,7 @@ tag: 테스트
 toc: true
 author_profile: false
 sidebar:
-    nav: "docs"
+    nav: "counts"
 # search: false   # 검색해도 이 포스팅이 걸리지 않게 함.    
 redirect_from:
   - /self/button

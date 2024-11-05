@@ -6,7 +6,7 @@ tags: [code, test, Python, JSON, JavaScript, YAML]
 toc: true
 author_profile: false
 sidebar:
-    nav: "docs"
+    nav: "counts"
 ---
 
 # 코드 블록 및 인라인 코드 테스트
