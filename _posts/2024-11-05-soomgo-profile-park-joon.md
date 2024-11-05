@@ -12,9 +12,6 @@ sidebar:
 #     - self-intro/soomgo
 ---
 
-중앙정렬. 
-{: .align-center}
-
 # 박준
 
 👨‍🎓수학과 / 인공지능 석사 (Kyoto Univ.) ・수학과외 카테고리 0.01% (리뷰순) ・데이터분석, 코딩 레슨 ・챗봇 등 외주 ✅

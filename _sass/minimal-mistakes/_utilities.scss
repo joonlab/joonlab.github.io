@@ -147,7 +147,6 @@ $text-alignments: left, right, start, end, center, justify;
 }
 
 /* image align right */
-
 .align-right {
   display: block;
   margin-inline: auto;
@@ -163,7 +162,6 @@ $text-alignments: left, right, start, end, center, justify;
 .align-center {
   display: block;
   margin-inline: auto;
-  width: fit-content; /* 또는 특정 너비 값 */
 }
 
 /* file page content container */
