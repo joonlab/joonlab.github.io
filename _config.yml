@@ -20,7 +20,7 @@ locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "준랩 | JoonLab"
 title_separator          : "|"
-subtitle                 : "Steady"
+subtitle                 : "#AI #LLM #IT #연구 #논문"
 name                     : "JoonLab"
 description              : "준랩의 블로그입니다"
 url                      : "https://joonlab.github.io"
