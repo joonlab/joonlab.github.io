@@ -34,13 +34,13 @@ from google.colab import userdata
 NVIDIA_API_KEY = userdata.get('NVIDIA_API_KEY')
 ```
 
-#### 참고 이미지
+## 참고 이미지
 
 [코랩 환경 변수 설정 참고 이미지](https://i.imghippo.com/files/nkS8F1729430186.png)
 
 ⚠️ 참고 이미지에서는 OpenAI API KEY를 예시로 들어 설명하고 있습니다.
 
-2️⃣의 "OPENAI_API_KEY" 를 "NVIDIA_API_KEY" 로 변경해주세요.
+2️⃣ 의 "OPENAI_API_KEY" 를 "NVIDIA_API_KEY" 로 변경해주세요.
 
 ---
 # 튜토리얼 (OCR)
