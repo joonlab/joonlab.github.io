@@ -10,26 +10,6 @@ sidebar:
 ---
 
 # Large Language Model Based Long Context Modeling Papers and Blogs 
-<!--
-[![Awesome](https://camo.githubusercontent.com/64f8905651212a80869afbecbf0a9c52a5d1e70beab750dea40a994fa9a9f3c6/68747470733a2f2f617765736f6d652e72652f62616467652e737667)](https://github.com/Xnhyacinth/Awesome-LLM-Long_Context_Modeling) [![License: MIT](https://camo.githubusercontent.com/fd551ba4b042d89480347a0e74e31af63b356b2cac1116c7b80038f41b04a581/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d677265656e2e737667)](https://opensource.org/licenses/MIT) -->
-<div align="center">
- <p align="center">
- 
-   <a href="#1-Survey-Papers">📝 Papers</a> | <a href="https://www.notion.so/Huanxuan-Liao-s-Blog-6518cf95f0d54858829b042588ff88bb">📚 Notions</a>
- 
- </p>
-</div>
-<div align="center">
-
-<!-- ![Build](https://img.shields.io/appveyor/build/gruntjs/grunt) -->
-[![LICENSE](https://img.shields.io/github/license/Xnhyacinth/Awesome-LLM-Long-Context-Modeling)](https://github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling/blob/main/LICENSE)
-![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
-[![commit](https://img.shields.io/github/last-commit/Xnhyacinth/Long_Text_Modeling_Papers?color=blue)](https://github.com/Xnhyacinth/Long_Text_Modeling_Papers/commits/main)
-[![PR](https://img.shields.io/badge/PRs-Welcome-red)](https://github.com/Xnhyacinth/Long_Text_Modeling_Papers/pulls)
-[![GitHub Repo stars](https://img.shields.io/github/stars/Xnhyacinth/Awesome-LLM-Long-Context-Modeling)](https://github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling)
-<!-- ![license](https://img.shields.io/bower/l/bootstrap?style=plastic) -->
-
-</div>
 
 This repo includes papers and blogs about Efficient Transformers, Length Extrapolation, Long Term Memory, Retrieval Augmented Generation(RAG), and Evaluation for Long Context Modeling.
 
@@ -37,28 +17,31 @@ This repo includes papers and blogs about Efficient Transformers, Length Extrapo
 
 Thanks for all the great contributors on GitHub!🔥⚡🔥
 
-### Contents
+## Contents
 
-* [1. Survey Papers](#1-Survey-Papers)
-* [2. Efficient Attention](#2-Efficient-Attention)
-  * [2.1 Sparse Attention](#21-Sparse-Attention)
-  * [2.2 Linear Attention](#22-Linear-Attention)
-  * [2.3 Hierarchical Attention](#23-Hierarchical-Attention)
-  * [2.4 IO-Aware Attention](#24-IO-Aware-Attention)
-* [3. Recurrent Transformers](#3-Recurrent-Transformers)
-* [4. State Space Models](#4-State-Space-Models)
-* [5. Length Extrapolation](#5-Length-Extrapolation)    🔥RoPE🔥
-* [6. Long Term Memory](#6-Long-Term-Memory)
-* [7. RAG and ICL](#7-RAG-and-ICL)
-* [8. Agent](#8-Agent)
-* [9. Compress](#9-Compress)
-* [10. Long Video and Image](#10-Long-Video-and-Image)
-* [11. Benchmark and Evaluation](#11-Benchmark-and-Evaluation)
-  * [11.1 LLM](#111-LLM)
-  * [11.2 MLLM](#112-MLLM)
-* [12. Long Text Generation](#12-Long-Text-Generation)
-* [13. Blogs](#13-Blogs)
-* [Acknowledgements](#acknowledgements)
+```
+* 1. Survey Papers
+* 2. Efficient Attention
+  * 2.1 Sparse Attention
+  * 2.2 Linear Attention
+  * 2.3 Hierarchical Attention
+  * 2.4 IO-Aware Attention
+* 3. Recurrent Transformers
+* 4. State Space Models
+* 5. Length Extrapolation    🔥RoPE🔥
+* 6. Long Term Memory
+* 7. RAG and ICL
+* 8. Agent
+* 9. Compress
+* 10. Long Video and Image
+* 11. Benchmark and Evaluation
+  * 11.1 LLM
+  * 11.2 MLLM
+* 12. Long Text Generation
+* 13. Blogs
+* Acknowledgements
+```
+
 
 # 📢 News
 
@@ -235,8 +218,6 @@ Thanks for all the great contributors on GitHub!🔥⚡🔥
 > You can directly click on the title to jump to the corresponding PDF link location
 
 ## 1. Survey Papers
-
-1. [**Efficient Transformers: A Survey.**](https://arxiv.org/abs/2009.06732) *Yi Tay, Mostafa Dehghani, Dara Bahri, Donald Metzler.* Arxiv 2022.
 
 2. [**A Survey on Long Text Modeling with Transformers.**](https://arxiv.org/abs/2302.14502) *Zican Dong, Tianyi Tang, Lunyi Li, Wayne Xin Zhao.* Arxiv 2023.
 
