@@ -1,28 +1,94 @@
 <!-- start custom footer snippets -->
 
-<!-- Auto-generate image captions from alt text -->
+<!-- Toast notification styles -->
+<style>
+.toast-notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  z-index: 10000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.toast-notification.show {
+  opacity: 1;
+}
+</style>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Select all images inside page content that have alt text
+  // ===== 1. Auto-generate image captions with inline styles =====
   const images = document.querySelectorAll('.page__content img[alt]:not([alt=""])');
 
   images.forEach(function(img) {
-    // Skip if already inside a figure
     if (img.closest('figure')) return;
 
-    // Create figure wrapper
     const figure = document.createElement('figure');
     figure.className = 'image-with-caption';
+    figure.style.margin = '1.5em 0';
+    figure.style.textAlign = 'center';
 
-    // Create caption from alt text
     const caption = document.createElement('figcaption');
     caption.textContent = img.alt;
+    // Apply styles directly to override theme defaults
+    caption.style.fontSize = '0.65em';
+    caption.style.fontStyle = 'normal';
+    caption.style.color = '#6c757d';
+    caption.style.textAlign = 'center';
+    caption.style.marginTop = '0.5em';
 
-    // Wrap image in figure
     img.parentNode.insertBefore(figure, img);
     figure.appendChild(img);
     figure.appendChild(caption);
   });
+
+  // ===== 2. Email copy to clipboard =====
+  const emailLink = document.querySelector('.author__urls a[href="#"]');
+  if (emailLink && emailLink.textContent.includes('@')) {
+    const email = emailLink.textContent.trim();
+
+    emailLink.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      navigator.clipboard.writeText(email).then(function() {
+        showToast('이메일 주소가 복사되었습니다');
+      }).catch(function() {
+        // Fallback for older browsers
+        const textarea = document.createElement('textarea');
+        textarea.value = email;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        showToast('이메일 주소가 복사되었습니다');
+      });
+    });
+
+    // Change cursor to pointer
+    emailLink.style.cursor = 'pointer';
+  }
+
+  // Toast notification function
+  function showToast(message) {
+    let toast = document.querySelector('.toast-notification');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.className = 'toast-notification';
+      document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    toast.classList.add('show');
+
+    setTimeout(function() {
+      toast.classList.remove('show');
+    }, 2000);
+  }
 });
 </script>
 
