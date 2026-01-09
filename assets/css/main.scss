@@ -25,11 +25,12 @@ search: false
     }
 
     figcaption {
-      font-size: 0.85em;
-      font-style: italic;
+      font-size: 0.6em;
+      font-style: normal;
       color: #6c757d;
       text-align: center;
-      padding: 0 1em;
+      width: 100%;
+      display: block;
     }
   }
 }

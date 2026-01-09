@@ -125,6 +125,7 @@ author:
   links:
     - label: "wns9133@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
+      url: "#"
     - label: "Bio"
       icon: "fa-solid fa-link"
       url: "https://bio.link/joonpark"
