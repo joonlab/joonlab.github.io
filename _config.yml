@@ -143,7 +143,10 @@ author:
       url: "https://www.instagram.com/j00n_98/"
     - label: "Threads"
       icon: "fa-brands fa-threads"
-      url: "https://www.threads.net/@j00n_98"  
+      url: "https://www.threads.net/@j00n_98"
+    - label: "Buy Me a Coffee"
+      icon: "fas fa-mug-hot"
+      url: "https://buymeacoffee.com/joonlab"
 
 # Site Footer
 footer:
