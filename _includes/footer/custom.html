@@ -1,3 +1,29 @@
 <!-- start custom footer snippets -->
 
+<!-- Auto-generate image captions from alt text -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Select all images inside page content that have alt text
+  const images = document.querySelectorAll('.page__content img[alt]:not([alt=""])');
+
+  images.forEach(function(img) {
+    // Skip if already inside a figure
+    if (img.closest('figure')) return;
+
+    // Create figure wrapper
+    const figure = document.createElement('figure');
+    figure.className = 'image-with-caption';
+
+    // Create caption from alt text
+    const caption = document.createElement('figcaption');
+    caption.textContent = img.alt;
+
+    // Wrap image in figure
+    img.parentNode.insertBefore(figure, img);
+    figure.appendChild(img);
+    figure.appendChild(caption);
+  });
+});
+</script>
+
 <!-- end custom footer snippets -->

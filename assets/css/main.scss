@@ -7,3 +7,29 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// Custom image styles - rounded corners with caption
+.page__content {
+  img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  // Auto-generated figure wrapper for images with alt text
+  figure.image-with-caption {
+    margin: 1.5em 0;
+
+    img {
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    figcaption {
+      font-size: 0.85em;
+      font-style: italic;
+      color: #6c757d;
+      text-align: center;
+      padding: 0 1em;
+    }
+  }
+}
