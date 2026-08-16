@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://joonlab.github.io/sitemap.xml
+Sitemap: https://blog.joonlab98.com/sitemap.xml
