@@ -1,19 +1,13 @@
 <!-- start custom head snippets -->
 
-<!-- 한글 웹폰트: Pretendard 동적 서브셋
-     테마 기본 "Stylish" 는 로드되지 않아 Windows 에서 맑은 고딕으로 떨어졌다.
-     동적 서브셋이라 실제 사용된 글자에 해당하는 woff2 조각만 내려받는다. -->
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<!-- 렌더 블로킹 회피: preload 후 onload 에서 stylesheet 로 승격.
-     (as="style" 는 preload 에서만 의미가 있다 — rel="stylesheet" 에 붙여도 무시된다)
-     폴백 스택이 OS별 한글 서체라 스왑 전에도 읽을 수 있다. -->
-<link rel="preload" as="style" crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
-      onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" crossorigin
-        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-</noscript>
+<!-- 한글 웹폰트: Pretendard self-hosted 서브셋 (@font-face 는 main.css 안에 선언)
+     이전에는 jsDelivr 동적 서브셋이라 페이지당 19요청 약 506KB 였다.
+     지금은 동일 오리진 1요청. LCP 에 바로 쓰이므로 preload 한다. -->
+<link rel="preload" as="font" type="font/woff2" crossorigin
+      href="{{ '/assets/fonts/PretendardVariable.subset.woff2' | relative_url }}">
+
+<!-- 아이콘: FontAwesome 6.7.2 self-hosted 서브셋 (302KB → 8.2KB, 사용 41종만) -->
+<link rel="stylesheet" href="{{ '/assets/css/fontawesome-subset.css' | relative_url }}">
 
 <!-- favicon -->
 <link rel="icon" type="image/jpeg" sizes="64x64" href="{{ '/assets/images/joonlab-logo-64.jpg' | relative_url }}">

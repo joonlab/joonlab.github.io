@@ -22,7 +22,7 @@ toc_sticky: true
 
 **나노바나나 프로(Nano Banana Pro)**는 구글 딥마인드가 2025년 11월 20일 출시한 최신 AI 이미지 생성 및 편집 모델입니다. 공식 명칭은 **Gemini 3 Pro Image**이며, 기존 나노바나나(Gemini 2.5 Flash Image 기반)를 대폭 업그레이드한 버전입니다.
 
-![나노바나나 프로 공식 소개](https://raw.githubusercontent.com/joonlab/md-share-db/main/images/google-blog-hero_402109.png)
+![나노바나나 프로 공식 소개](/assets/images/posts/nano-banana-pro/google-blog-hero_402109.webp){: width="1206" height="1291" fetchpriority="high" }
 
 > 출처: [Google Blog - Introducing Nano Banana Pro](https://blog.google/technology/ai/nano-banana-pro/)
 
@@ -41,7 +41,7 @@ toc_sticky: true
 | **5명 캐릭터 일관성** | 최대 5명의 인물 외형 특징 유지 |
 | **구글 검색 통합** | 실시간 정보 기반 이미지 생성 |
 
-![나노바나나 프로 기능 소개](https://raw.githubusercontent.com/joonlab/md-share-db/main/images/google-blog-examples1_7d4b6e.png)
+![나노바나나 프로 기능 소개](/assets/images/posts/nano-banana-pro/google-blog-examples1_7d4b6e.webp){: width="1206" height="1291" loading="lazy" decoding="async" }
 
 > 출처: [Google Blog - Introducing Nano Banana Pro](https://blog.google/technology/ai/nano-banana-pro/)
 
@@ -73,7 +73,7 @@ toc_sticky: true
 
 ### 24가지 실제 활용 사례 개요
 
-![ImagineArt 24가지 사례](https://raw.githubusercontent.com/joonlab/md-share-db/main/images/imagineart-usecases1_07c4d1.png)
+![ImagineArt 24가지 사례](/assets/images/posts/nano-banana-pro/imagineart-usecases1_07c4d1.webp){: width="1206" height="1291" loading="lazy" decoding="async" }
 
 > 출처: [ImagineArt - 24 Mind-Blowing Nano Banana Pro Use Cases](https://www.imagine.art/blogs/nano-banana-pro-use-cases)
 
@@ -127,7 +127,7 @@ toc_sticky: true
 
 #### 실제 사례: 식물 인포그래픽
 
-![인포그래픽 제작 사례](https://raw.githubusercontent.com/joonlab/md-share-db/main/images/google-blog-examples2_209672.png)
+![인포그래픽 제작 사례](/assets/images/posts/nano-banana-pro/google-blog-examples2_209672.webp){: width="1206" height="1291" loading="lazy" decoding="async" }
 
 > 실제 사례: "String of Turtles" 식물 사진 → Leaf Pattern, Origin & Habitat, Growth Habit, Care Essentials 등 실제 정보 기반 인포그래픽 자동 생성
 > 출처: [Google Blog](https://blog.google/technology/ai/nano-banana-pro/)
@@ -149,7 +149,7 @@ toc_sticky: true
 
 #### 스토리보드 자동 생성
 
-![스토리보드 제작 사례](https://raw.githubusercontent.com/joonlab/md-share-db/main/images/google-blog-examples3_cecc4a.png)
+![스토리보드 제작 사례](/assets/images/posts/nano-banana-pro/google-blog-examples3_cecc4a.webp){: width="1206" height="1291" loading="lazy" decoding="async" }
 
 > 실제 사례: 우주비행사 이미지 한 장 → Establishing Shot, Medium Shot, Close-up, POV Shot 등 영화 촬영 기법에 맞춘 스토리보드 자동 생성
 > 출처: [Google Blog](https://blog.google/technology/ai/nano-banana-pro/)
@@ -179,7 +179,7 @@ toc_sticky: true
 
 ### 3.6 글로벌/다국어 캠페인
 
-![구글 코리아 블로그](https://raw.githubusercontent.com/joonlab/md-share-db/main/images/google-korea-blog2_c00c14.png)
+![구글 코리아 블로그](/assets/images/posts/nano-banana-pro/google-korea-blog2_c00c14.webp){: width="1206" height="1291" loading="lazy" decoding="async" }
 
 > 출처: [구글 코리아 블로그 - 나노바나나 프로 소개](https://blog.google/intl/ko-kr/company-news/technology/nano-banana-pro/)
 
@@ -196,13 +196,13 @@ toc_sticky: true
 
 ### Max Woolf의 심층 리뷰
 
-![Max Woolf 리뷰](https://raw.githubusercontent.com/joonlab/md-share-db/main/images/maxwoolf-review1_981528.png)
+![Max Woolf 리뷰](/assets/images/posts/nano-banana-pro/maxwoolf-review1_981528.webp){: width="1206" height="1291" loading="lazy" decoding="async" }
 
 > 출처: [Max Woolf's Blog - "Nano Banana Pro is the best AI image generator, with caveats"](https://minimaxir.com/2025/12/nano-banana-pro/)
 
 ### 고급 프롬프트 엔지니어링
 
-![복잡한 프롬프트 예시](https://raw.githubusercontent.com/joonlab/md-share-db/main/images/maxwoolf-review2_ddaaf3.png)
+![복잡한 프롬프트 예시](/assets/images/posts/nano-banana-pro/maxwoolf-review2_ddaaf3.webp){: width="1206" height="1291" loading="lazy" decoding="async" }
 
 > 복잡한 제약 조건을 가진 프롬프트도 정확하게 처리: 3마리 고양이의 색상, 포즈, 의상, 배경, 조명까지 모두 지정
 > 출처: [Max Woolf's Blog](https://minimaxir.com/2025/12/nano-banana-pro/)
@@ -231,7 +231,7 @@ Aspects of the image composition that MUST be followed EXACTLY:
 
 ## 5. 추천 프롬프트 예시
 
-![프롬프트 가이드](https://raw.githubusercontent.com/joonlab/md-share-db/main/images/prompt-guide1_aaf802.png)
+![프롬프트 가이드](/assets/images/posts/nano-banana-pro/prompt-guide1_aaf802.webp){: width="1206" height="1291" loading="lazy" decoding="async" }
 
 > 출처: [ImagineArt - Nano Banana Pro Prompt Guide](https://www.imagine.art/blogs/nano-banana-pro-prompt-guide)
 

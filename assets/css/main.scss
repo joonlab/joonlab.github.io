@@ -9,6 +9,21 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 /* ==========================================================================
+   Pretendard — self-hosted 서브셋 (2026-08-19)
+   jsDelivr 동적 서브셋은 페이지당 19요청 약 506KB 였다.
+   여기서는 1요청 약 475KB · 동일 오리진 · 1년 캐시.
+   KS X 1001 상용 한글 2,350음절을 포함해 새 글에서도 폴백으로 새지 않는다.
+   재생성: tools/build-font-subset.sh
+   ========================================================================== */
+@font-face {
+  font-family: "Pretendard Variable";
+  font-weight: 45 930;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/PretendardVariable.subset.woff2") format("woff2-variations");
+}
+
+/* ==========================================================================
    준랩 커스텀 — 팔레트 토큰
    ========================================================================== */
 :root {
@@ -485,7 +500,8 @@ pre .clipboard-copy-button {
    원본이 1512×1618 로 일정하므로 비율을 미리 잡아 CLS 를 없앤다. */
 .page__content p > img,
 .page__content figure img {
-  aspect-ratio: 1512 / 1618;
+  /* 비율은 img 의 width/height 속성에서 브라우저가 계산하게 둔다.
+     여기서 aspect-ratio 를 하드코딩하면 다른 비율의 이미지가 찌그러진다. */
   height: auto;
   max-width: 100%;
 }

@@ -18,8 +18,9 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"></noscript>
+{%- comment -%} FontAwesome CDN 제거 (2026-08-19) — self-hosted 서브셋으로 대체.
+     302KB 전체 폰트 대신 사용 중인 41개 아이콘만 담은 8.2KB 를 쓴다.
+     선언 위치: _includes/head/custom.html {%- endcomment -%}
 
 {% if site.head_scripts %}
   {% for script in site.head_scripts %}

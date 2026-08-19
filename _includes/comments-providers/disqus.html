@@ -1,14 +1,45 @@
 {% if site.comments.disqus.shortname %}
   <script>
-    var disqus_config = function () {
-      this.page.url = "{{ page.url | absolute_url }}";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "{{ page.id }}"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
-    };
-    (function() { /* DON'T EDIT BELOW THIS LINE */
-      var d = document, s = d.createElement('script');
-      s.src = 'https://{{ site.comments.disqus.shortname }}.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+    /* 2026-08-19: Disqus 를 페이지 로드 즉시 실행하지 않는다.
+       embed.js 는 추적 스크립트 체인을 끌고 오는데, 댓글은 글을 끝까지
+       읽어야 보이는 영역이라 대부분의 방문에서 낭비다.
+       IntersectionObserver 로 #disqus_thread 가 화면에 근접할 때만 삽입한다. */
+    (function () {
+      var THREAD_ID = 'disqus_thread';
+
+      window.disqus_config = function () {
+        this.page.url = "{{ page.url | absolute_url }}";
+        this.page.identifier = "{{ page.id }}";
+      };
+
+      var loaded = false;
+      function loadDisqus() {
+        if (loaded) return;
+        loaded = true;
+        var d = document, s = d.createElement('script');
+        s.src = 'https://{{ site.comments.disqus.shortname }}.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+
+      function arm() {
+        var el = document.getElementById(THREAD_ID);
+        /* 컨테이너가 없거나 관측 API 가 없으면 종전대로 즉시 로드 — 기능 상실 방지 */
+        if (!el || !('IntersectionObserver' in window)) { loadDisqus(); return; }
+
+        var io = new IntersectionObserver(function (entries) {
+          for (var i = 0; i < entries.length; i++) {
+            if (entries[i].isIntersecting) { io.disconnect(); loadDisqus(); return; }
+          }
+        }, { rootMargin: '600px 0px' });   /* 도달 600px 전에 미리 로드 */
+        io.observe(el);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', arm);
+      } else {
+        arm();
+      }
     })();
   </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
