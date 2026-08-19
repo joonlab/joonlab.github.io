@@ -9,6 +9,12 @@
 <!-- 아이콘: FontAwesome 6.7.2 self-hosted 서브셋 (302KB → 8.2KB, 사용 41종만) -->
 <link rel="stylesheet" href="{{ '/assets/css/fontawesome-subset.css' | relative_url }}">
 
+<!-- 색인 제어 (2026-08-20)
+     테마는 robots 메타를 아예 내보내지 않는다. front matter 의 `noindex: true` 로 제어한다.
+     ⚠️ `sitemap: false` 는 sitemap 에서만 빼는 것이라 색인을 막지 못한다 — 링크로 발견되면 색인된다.
+     follow 는 유지해 링크 가치는 흘려보낸다. -->
+{% if page.noindex %}<meta name="robots" content="noindex, follow">{% endif %}
+
 <!-- favicon -->
 <link rel="icon" type="image/jpeg" sizes="64x64" href="{{ '/assets/images/joonlab-logo-64.jpg' | relative_url }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/joonlab-logo-180.jpg' | relative_url }}">
