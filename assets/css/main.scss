@@ -603,3 +603,15 @@ span.pagination--pager {
   border-radius: 4px;
   cursor: not-allowed;
 }
+
+/* [LOW] 제목 레벨 건너뜀 수정에 따른 크기 보정
+   목차·공유하기·댓글 제목이 h4 였다(본문이 h1→h4, h2→h4 로 건너뜀).
+   시맨틱만 h2 로 올리고 시각적 크기는 그대로 유지한다. */
+.nav__title,
+.page__share-title,
+.page__comments-title {
+  font-size: 0.75em;
+  margin: 0;
+}
+
+h2.nav__title { line-height: 1.5; }

@@ -27,7 +27,7 @@ url                      : "https://joonlab98.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "joonlab/joonlab.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/joonlab-logo.jpeg"
+logo                     : "/assets/images/joonlab-logo-64.jpg" # 마스트헤드 32px 표시 → 2x
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true
 words_per_minute         : 320 # 한글 어절 기준 (기본 200은 영어 단어 기준이라 과다 추정)
@@ -120,7 +120,7 @@ analytics:
 # Site Author
 author:
   name             : "박준"
-  avatar           : "/assets/images/joonlab-logo.jpeg"
+  avatar           : "/assets/images/joonlab-logo-256.jpg" # 사이드바 ~110px 표시 → 2x
   bio              : "AX Consultant & FDE<br>교토대 정보학연구과 석사 · LLM/RAG<br>에이전트 시스템을 설계하고 만듭니다"
   location         : "Seoul, Korea"
   links:
