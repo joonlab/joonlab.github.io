@@ -8,6 +8,7 @@ sidebar:
     nav: "counts"
 redirect_from:
   - /test/css
+published: false   # 2026-08-19 비공개 — 블로그 구축 때 만든 마크다운 문법 테스트글. 파일은 참고용으로 보존
 ---
 
 ## {: .text-right} 사용 예시

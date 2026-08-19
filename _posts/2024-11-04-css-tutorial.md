@@ -11,6 +11,7 @@ author_profile: false
 sidebar:
     nav: "counts"
 # search: false   # 검색해도 이 포스팅이 걸리지 않게 함.    
+published: false   # 2026-08-19 비공개 — 블로그 구축 때 만든 마크다운 문법 테스트글. 파일은 참고용으로 보존
 ---
 
 ## 예시 1 - default

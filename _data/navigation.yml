@@ -1,33 +1,15 @@
-# main links
+# main links — 상단 마스트헤드
+# (docs/counts 섹션은 어떤 include·layout 도 참조하지 않아 2026-08-19 제거)
 main:
-  - title: "Category"
+  - title: "소개"
+    url: /about/
+  - title: "카테고리"
     url: /categories/
-  - title: "Tag"
+  - title: "태그"
     url: /tags/
-  # - title: "By Year"
-  #   url: /year-archive/  
-  - title: "Monthly"
-    url: /month-archive/      
-  - title: "Search"
-    url: /search/    
-
-docs:
-  - title: "대목차1"
-    children:
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/ 
-  - title: "대목차2"
-    children:
-      - title: "Category"
-        url: /categories/
-      - title: "Tag"
-        url: /tags/                
-  
-  
-counts:
-  - title: "Category"
-    use: true  
-  - title: "Tag"
-    use: true    
+  - title: "연도별"
+    url: /year-archive/
+  - title: "포트폴리오"
+    url: /portfolio/
+  - title: "검색"
+    url: /search/

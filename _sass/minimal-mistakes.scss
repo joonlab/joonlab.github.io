@@ -37,4 +37,6 @@
 @import "minimal-mistakes/print";
 
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+// (2026-08-19) Google Fonts 'Stylish' 제거 — CSS 안의 @import 는 렌더 블로킹으로
+// 직렬 로드된다. 본문 서체는 Pretendard(동적 서브셋)로 교체했고 head 에서 <link> 로 받는다.
+// 참고: _includes/head/custom.html, skins/_joonlab.scss

@@ -8,29 +8,423 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// Custom image styles - rounded corners with caption
+/* ==========================================================================
+   준랩 커스텀 — 팔레트 토큰
+   ========================================================================== */
+:root {
+  --jl-red:    #a50034;
+  --jl-red-dk: #7d0027;
+  --jl-gray:   #6b6b6b;
+  --jl-silver: #8a8d8f;   /* 선·보더 전용 (본문 대비 3.34:1) */
+  --jl-gold:   #85714d;
+  --jl-ink:    #1a1a1a;
+  --jl-paper:  #ffffff;
+  --jl-mist:   #f7f7f8;
+  --jl-line:   #e6e7e8;
+}
+
+/* ==========================================================================
+   한글 조판 — 이 블로그에서 가장 큰 가독성 개선
+   word-break: keep-all 이 없으면 한글이 단어 중간에서 잘린다.
+   ========================================================================== */
+html { -webkit-text-size-adjust: 100%; }
+
+body,
+.page__content,
+.archive__item-excerpt,
+.page__meta,
+.author__bio {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
 .page__content {
-  img {
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  line-height: 1.78;              /* 한글은 라틴보다 행간을 넉넉히 */
+  letter-spacing: -0.003em;
+  color: var(--jl-ink);
+
+  p { margin: 0 0 1.35em; }
+
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.02em;
+    line-height: 1.4;
+    color: var(--jl-ink);
+  }
+  h2 {
+    margin-top: 2.4em;
+    padding-bottom: 0.35em;
+    border-bottom: 1px solid var(--jl-line);
+  }
+  h3 { margin-top: 2em; }
+
+  /* 본문 링크 — 밑줄은 얇게, hover 에서만 진하게 */
+  a:not(.btn) {
+    color: var(--jl-red);
+    text-decoration: underline;
+    text-decoration-color: rgba(165, 0, 52, 0.32);
+    text-underline-offset: 0.18em;
+    text-decoration-thickness: 1px;
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--jl-red-dk);
+      text-decoration-color: var(--jl-red-dk);
+    }
   }
 
-  // Auto-generated figure wrapper for images with alt text
-  figure.image-with-caption {
-    margin: 1.5em 0;
+  strong { color: var(--jl-ink); font-weight: 700; }
 
-    img {
-      display: block;
-      margin-bottom: 0.5em;
+  /* 인용 — 골드 세로선 */
+  blockquote {
+    margin: 1.8em 0;
+    padding: 0.2em 0 0.2em 1.15em;
+    border-left: 3px solid var(--jl-gold);
+    color: var(--jl-gray);
+    font-style: normal;
+
+    p:last-child { margin-bottom: 0; }
+  }
+
+  /* 표 — 얇은 선, 헤더만 강조 */
+  table {
+    display: block;
+    overflow-x: auto;             /* 좁은 화면에서 표만 가로 스크롤 */
+    width: 100%;
+    font-size: 0.92em;
+    border-collapse: collapse;
+
+    th {
+      background: var(--jl-mist);
+      color: var(--jl-ink);
+      border-bottom: 2px solid var(--jl-line);
+      font-weight: 700;
     }
+    td { border-bottom: 1px solid var(--jl-line); }
+    th, td { padding: 0.6em 0.8em; }
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--jl-line);
+    margin: 2.5em 0;
+  }
+
+  /* 이미지 — 기존 스타일 유지 */
+  img {
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  figure.image-with-caption {
+    margin: 1.8em 0;
+
+    img { display: block; margin-bottom: 0.6em; }
 
     figcaption {
-      font-size: 0.6em;
+      font-size: 0.8em;
       font-style: normal;
-      color: #6c757d;
+      color: var(--jl-gray);
       text-align: center;
       width: 100%;
       display: block;
+    }
+  }
+}
+
+/* 코드 — 인라인은 은은하게, 블록은 테두리로 경계 */
+code.highlighter-rouge,
+.page__content code:not([class*="language-"]) {
+  background: var(--jl-mist);
+  color: var(--jl-red-dk);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.88em;
+}
+
+div.highlighter-rouge,
+figure.highlight {
+  border: 1px solid var(--jl-line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   마스트헤드 — 흰 배경 + 얇은 실버 보더
+   ========================================================================== */
+.masthead {
+  position: sticky;           /* 긴 글에서도 카테고리·검색으로 바로 이동 */
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: saturate(180%) blur(8px);
+  -webkit-backdrop-filter: saturate(180%) blur(8px);
+  border-bottom: 1px solid var(--jl-line);
+}
+
+/* 고정 헤더에 제목이 가리지 않도록 앵커 이동 시 여백 확보 */
+html { scroll-behavior: smooth; }
+
+.page__content :is(h1, h2, h3, h4, h5, h6),
+.page__title {
+  scroll-margin-top: 4.5rem;
+}
+
+/* 목차(sticky sidebar)도 헤더 아래로 내려서 겹침 방지 */
+.sidebar__right.sticky,
+.toc.sticky {
+  top: 4.75em;
+}
+
+.site-title {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--jl-ink);
+}
+
+.site-subtitle {
+  color: var(--jl-gray);
+  font-size: 0.72em;
+}
+
+.greedy-nav {
+  background: transparent;
+
+  a {
+    color: var(--jl-ink);
+    font-weight: 500;
+
+    &:hover { color: var(--jl-red); }
+  }
+
+  /* 현재 위치를 레드 밑줄로 표시 */
+  .visible-links a::before {
+    height: 2px;
+    background: var(--jl-red);
+  }
+
+  button { background: var(--jl-ink); }
+}
+
+/* ==========================================================================
+   글 목록 카드
+   ========================================================================== */
+.archive__item {
+  padding: 0.2em 0;
+}
+
+.archive__item-title {
+  margin-top: 0.6em;
+  margin-bottom: 0.3em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+
+  a {
+    color: var(--jl-ink);
+    text-decoration: none;
+
+    &:hover { color: var(--jl-red); }
+  }
+}
+
+.archive__item-excerpt {
+  color: var(--jl-gray);
+  font-size: 0.92em;
+  line-height: 1.7;
+}
+
+.page__meta,
+.page__meta a,
+.archive__item .page__meta {
+  color: var(--jl-gray);
+  font-size: 0.78em;
+}
+
+.page__meta-readtime,
+.page__meta-date {
+  color: var(--jl-gold);
+}
+
+/* ==========================================================================
+   태그 · 카테고리 — 골드 알약
+   ========================================================================== */
+.page__taxonomy .page__taxonomy-item,
+.taxonomy__index a {
+  display: inline-block;
+  padding: 0.24em 0.7em;
+  margin: 0.2em 0.25em 0.2em 0;
+  border: 1px solid rgba(133, 113, 77, 0.35);
+  border-radius: 999px;
+  background: rgba(133, 113, 77, 0.06);
+  color: var(--jl-gold);
+  font-size: 0.78em;
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    background: rgba(133, 113, 77, 0.14);
+    border-color: var(--jl-gold);
+    color: var(--jl-gold);
+  }
+}
+
+/* ==========================================================================
+   사이드바 프로필
+   ========================================================================== */
+.author__avatar img {
+  border: 1px solid var(--jl-line);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.author__name {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--jl-ink);
+}
+
+.author__bio {
+  color: var(--jl-gray);
+  font-size: 0.86em;
+  line-height: 1.65;
+}
+
+.author__urls-wrapper button {
+  border-color: var(--jl-line);
+  color: var(--jl-ink);
+
+  &:hover { background: var(--jl-red); border-color: var(--jl-red); color: #fff; }
+}
+
+.author__urls {
+  border-color: var(--jl-line);
+
+  li { padding: 0.24em 0; }
+
+  a {
+    color: var(--jl-ink);
+    text-decoration: none;
+
+    &:hover { color: var(--jl-red); text-decoration: none; }
+  }
+
+  .fa, .fas, .fab, .far, .fa-solid, .fa-brands {
+    color: var(--jl-silver);   /* 아이콘은 장식 — 대비 요건 대상 아님 */
+    margin-right: 0.4em;
+  }
+}
+
+/* ==========================================================================
+   버튼 · 페이지네이션 · 알림
+   ========================================================================== */
+.btn--primary {
+  background-color: var(--jl-red);
+  border-color: var(--jl-red);
+
+  &:hover { background-color: var(--jl-red-dk); border-color: var(--jl-red-dk); }
+}
+
+.pagination a {
+  border-radius: 6px;
+
+  &:hover { background: var(--jl-mist); color: var(--jl-red); }
+}
+.pagination .current,
+.pagination .current:visited {
+  background: var(--jl-red);
+  border-color: var(--jl-red);
+  color: #fff;
+}
+
+.notice, .notice--primary, .notice--info,
+.notice--warning, .notice--success, .notice--danger {
+  border-radius: 8px;
+  font-size: 0.92em;
+}
+
+/* ==========================================================================
+   접근성 — 키보드 포커스는 항상 보이게
+   ========================================================================== */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--jl-red);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: rgba(165, 0, 52, 0.14);
+  color: var(--jl-ink);
+}
+
+/* 모션 민감 사용자 배려 */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   푸터
+   ========================================================================== */
+.page__footer {
+  background: var(--jl-mist);
+  border-top: 1px solid var(--jl-line);
+  color: var(--jl-gray);
+
+  a { color: var(--jl-gray); }
+  a:hover { color: var(--jl-red); }
+}
+
+.page__footer-follow .social-icons .fa,
+.page__footer-follow .social-icons .fab,
+.page__footer-follow .social-icons .fa-brands {
+  color: var(--jl-silver);
+}
+
+/* ==========================================================================
+   모바일 — 좁은 화면에서 여백/글자 조정
+   ========================================================================== */
+@media (max-width: 600px) {
+  .page__content {
+    font-size: 0.98rem;
+    line-height: 1.75;
+
+    h2 { margin-top: 1.9em; }
+    table { font-size: 0.86em; }
+  }
+
+  .archive__item-title { font-size: 1.05em; }
+}
+
+/* ==========================================================================
+   About 페이지 CTA 버튼 행
+   ========================================================================== */
+.jl-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  margin: 1.4em 0 2em;
+
+  .btn {
+    margin: 0;
+    border-radius: 6px;
+    font-size: 0.85em;
+  }
+
+  .btn:not(.btn--primary) {
+    background: transparent;
+    border: 1px solid var(--jl-line);
+    color: var(--jl-ink);
+
+    &:hover {
+      border-color: var(--jl-red);
+      color: var(--jl-red);
+      background: rgba(165, 0, 52, 0.04);
     }
   }
 }

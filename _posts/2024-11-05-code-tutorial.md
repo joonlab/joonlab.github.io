@@ -7,6 +7,7 @@ toc: true
 author_profile: false
 sidebar:
     nav: "counts"
+published: false   # 2026-08-19 비공개 — 블로그 구축 때 만든 마크다운 문법 테스트글. 파일은 참고용으로 보존
 ---
 
 # 코드 블록 및 인라인 코드 테스트

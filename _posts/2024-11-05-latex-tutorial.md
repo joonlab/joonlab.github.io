@@ -8,6 +8,7 @@ author_profile: false
 sidebar:
     nav: "counts"
 use_math: true
+published: false   # 2026-08-19 비공개 — 블로그 구축 때 만든 마크다운 문법 테스트글. 파일은 참고용으로 보존
 ---
 
 # LaTeX 수식 테스트

@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin    : "dirt" # "default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "joonlab" # 준랩 커스텀 — _sass/minimal-mistakes/skins/_joonlab.scss
 
 # Site Settings
 future: true
@@ -20,9 +20,9 @@ locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "준랩 | JoonLab"
 title_separator          : "|"
-subtitle                 : "#AI #LLM #IT #연구 #논문"
+subtitle                 : "AI 에이전트 · LLM · 하네스 엔지니어링"
 name                     : "JoonLab"
-description              : "준랩의 블로그입니다"
+description              : "박준(JoonLab)의 기술 블로그 — AI 에이전트 시스템, LLM/RAG, 하네스 엔지니어링과 업무 자동화를 실제로 만들어 본 기록."
 url                      : "https://joonlab98.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "joonlab/joonlab.github.io"
@@ -30,7 +30,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 logo                     : "/assets/images/joonlab-logo.jpeg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true
-words_per_minute         : 200
+words_per_minute         : 320 # 한글 어절 기준 (기본 200은 영어 단어 기준이라 과다 추정)
 enable_copy_code_button  : true # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
@@ -101,12 +101,13 @@ og_image                 : "/assets/images/joonlab-logo.jpeg"
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : "Person"
-  name                   : "준랩"
+  name                   : "박준"
   links:
+    - "https://bio.joonlab98.com"
+    - "https://www.linkedin.com/in/joonlab/"
     - "https://github.com/joonlab"
-    - "https://x.com/joonlab98"
     - "https://www.youtube.com/@joonlab98"
-    - "https://www.instagram.com/j00n_98/"
+    - "https://x.com/joonlab98"
 
 # Analytics 
 analytics:
@@ -118,35 +119,38 @@ analytics:
 
 # Site Author
 author:
-  name             : "Park Joon"
+  name             : "박준"
   avatar           : "/assets/images/joonlab-logo.jpeg"
-  bio              : "🇰🇷🇯🇵<br>Mathematics🎓<br>Intelligence Science & Technology💻"
-  location         : "Kyoto, Japan"
+  bio              : "AX Consultant & FDE<br>교토대 정보학연구과 석사 · LLM/RAG<br>에이전트 시스템을 설계하고 만듭니다"
+  location         : "Seoul, Korea"
   links:
-    - label: "wns9133@gmail.com"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "#"
-    - label: "Bio"
+    - label: "링크 허브"
       icon: "fa-solid fa-link"
-      url: "https://bio.link/joonpark"
-    - label: "YouTube"
-      icon: "fa-brands fa-youtube"
-      url: "https://www.youtube.com/@joonlab98"        
+      url: "https://bio.joonlab98.com"
+    - label: "포트폴리오"
+      icon: "fa-solid fa-address-card"
+      url: "/portfolio/"
+    - label: "강의·컨설팅 문의"
+      icon: "fa-solid fa-comment-dots"
+      url: "https://open.kakao.com/o/sUXWYvlf"
+    - label: "지식 공유방"
+      icon: "fa-solid fa-users"
+      url: "https://open.kakao.com/o/gl7JSkSg"
     - label: "GitHub"
       icon: "fa-brands fa-github"
       url: "https://github.com/joonlab"
+    - label: "LinkedIn"
+      icon: "fa-brands fa-linkedin"
+      url: "https://www.linkedin.com/in/joonlab/"
+    - label: "YouTube"
+      icon: "fa-brands fa-youtube"
+      url: "https://www.youtube.com/@joonlab98"
     - label: "X"
       icon: "fa-brands fa-x-twitter"
       url: "https://x.com/joonlab98"
-    - label: "Instagram"
-      icon: "fa-brands fa-instagram"
-      url: "https://www.instagram.com/j00n_98/"
-    - label: "Threads"
-      icon: "fa-brands fa-threads"
-      url: "https://www.threads.net/@j00n_98"
-    - label: "Buy Me a Coffee"
-      icon: "fas fa-mug-hot"
-      url: "https://buymeacoffee.com/joonlab"
+    - label: "wns9133@gmail.com"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:wns9133@gmail.com"
 
 # Site Footer
 footer:
