@@ -7,6 +7,7 @@ toc: true
 sidebar:
     nav: "counts"
 author_profile: false
+excerpt: "Llama-3.2 11B·90B vision-instruct 모델을 API로 호출하는 튜토리얼 코드 — 이미지 입력을 다루는 예제를 Colab 노트북에서 마크다운으로 변환해 정리했습니다."
 ---
 
 ## .ipynb to .md 변환
@@ -15,7 +16,7 @@ author_profile: false
 !jupyter nbconvert --to markdown "/content/Anthropic(Claude)_PDF_processing&Token_counting_tutorial_by_PARK_JOON.ipynb"
 ```
 
-## [Made by PARK JOON](https://bio.link/joonpark)
+## [Made by PARK JOON](https://bio.joonlab98.com)
 
 ---
 

@@ -1,5 +1,4 @@
 # main links — 상단 마스트헤드
-# (docs/counts 섹션은 어떤 include·layout 도 참조하지 않아 2026-08-19 제거)
 main:
   - title: "소개"
     url: /about/
@@ -13,3 +12,17 @@ main:
     url: /portfolio/
   - title: "검색"
     url: /search/
+
+# ⚠️ counts 를 지우지 말 것.
+# _includes/nav_list 에 `{% if include.nav == "counts" %}` 전용 분기가 있고
+# `navigation[0].use` 로 게이트한다. 이 키가 없으면 `sidebar: nav: "counts"` 를 쓰는
+# 글 15개의 사이드바(카테고리·태그 카운트)가 통째로 빈다.
+# 참조가 동적(site.data.navigation[include.nav])이라 grep 으로는 안 잡힌다.
+# 2026-08-19 실제로 지웠다가 배포본에서 회귀 확인 후 복구함.
+counts:
+  - title: "카테고리"
+    use: true
+  - title: "태그"
+    use: true
+
+# (docs 섹션은 `대목차1`/`대목차2` 플레이스홀더였고 참조처가 없어 2026-08-19 제거)

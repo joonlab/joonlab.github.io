@@ -1,6 +1,7 @@
 ---
 title: "소개"
 permalink: /about/
+description: "박준(JoonLab) 소개 — 교토대 정보학연구과 석사(LLM·RAG) 출신 AX 컨설턴트이자 에이전트 시스템 엔지니어. LG·SK 대기업 AI 교육과 컨설팅, 에이전트 하네스 설계."
 layout: single
 author_profile: true
 toc: false
@@ -30,7 +31,7 @@ LG·SK 등 대기업의 경영진부터 실무진까지 AI 교육과 AX 컨설�
 
 ## 관심 주제
 
-`에이전트 하네스 엔지니어링` · `멀티에이전트 오케스트레이션` · `LLM 長문맥·RAG` ·
+`에이전트 하네스 엔지니어링` · `멀티에이전트 오케스트레이션` · `LLM 롱컨텍스트·RAG` ·
 `AI 업무 자동화` · `기업 AX/DX` · `검증 가능한 AI 시스템 설계`
 
 ## 더 보기
@@ -46,5 +47,5 @@ LG·SK 등 대기업의 경영진부터 실무진까지 AI 교육과 AX 컨설�
 - **이메일** — [wns9133@gmail.com](mailto:wns9133@gmail.com)
 - **GitHub** — [github.com/joonlab](https://github.com/joonlab)
 - **LinkedIn** — [linkedin.com/in/joonlab](https://www.linkedin.com/in/joonlab/)
-- **YouTube** — [준랩 | JoonLab](https://www.youtube.com/@joonlab98)
+- **YouTube** — [준랩 \| JoonLab](https://www.youtube.com/@joonlab98)
 - **커뮤니티** — [준랩 지식 공유방 (AI·LLM 오픈채팅)](https://open.kakao.com/o/gl7JSkSg)

@@ -7,6 +7,7 @@ toc: true
 author_profile: false
 sidebar:
     nav: "counts"
+excerpt: "테디노트(TeddyNote) 유튜브 플레이리스트를 따라 GitHub 블로그를 만드는 과정 정리 — 개발환경 설치부터 시즌별 에피소드 영상과 참고 링크를 한곳에 모았습니다."
 ---
 
 ## 시즌 1

@@ -10,6 +10,7 @@ sidebar:
 # search: false   # 검색해도 이 포스팅이 걸리지 않게 함.    
 redirect_from:
   - /self/soomgo
+excerpt: "Anthropic Claude API로 PDF를 처리하고 토큰을 세는 튜토리얼 — API 키 발급부터 PDF 입력, Token Counting API로 input_tokens를 추출하는 방법까지 코드로 정리했습니다."
 ---
 
 
@@ -17,7 +18,7 @@ redirect_from:
 !jupyter nbconvert --to markdown /content/Search-Grounding_tutorial_by_PARK_JOON.ipynb
 ```
 
-# [Made by PARK JOON](https://bio.link/joonpark)
+# [Made by PARK JOON](https://bio.joonlab98.com)
 
 ---
 # [Claude API 발급 방법](https://llm-project-joon.site/API_KEY_%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%B3%E1%86%B8_%E1%84%87%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A5%E1%86%B8)

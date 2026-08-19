@@ -1,5 +1,6 @@
 ---
-title: "Posts by Year (grid view)"
+title: "연도별 (그리드)"
+sitemap: false
 permalink: /year-archive-grid/
 layout: posts
 entries_layout: grid

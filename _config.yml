@@ -70,7 +70,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
 search                   : true
-search_full_content      : true
+search_full_content      : false # 2026-08-19: true 일 때 lunr-store.js 가 254KB(본문 전체 포함) → 전 페이지 동기 로드
 search_provider          : lunr
 lunr:
   search_within_pages    : # true, false (default)
@@ -155,9 +155,9 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Bio"
+    - label: "링크 허브"
       icon: "fa-solid fa-link"
-      url: "https://bio.link/joonpark"
+      url: "https://bio.joonlab98.com"
     - label: "YouTube"
       icon: "fa-brands fa-youtube"
       url: "https://www.youtube.com/@joonlab98"       
@@ -318,6 +318,11 @@ compress_html:
 
 # Defaults
 defaults:
+  # Search Console 소유확인 파일은 색인 대상이 아니다 (2026-08-19)
+  - scope:
+      path: "google6d2b709d13876bb5.html"
+    values:
+      sitemap: false
   # _posts
   - scope:
       path: ""

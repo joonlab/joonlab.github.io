@@ -8,7 +8,7 @@
     </label>
     <input type="search" id="search" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
   </form>
-  <div id="results" class="results"></div>
+  <div id="results" class="results" role="status" aria-live="polite"></div>
   {%- when "google" -%}
   <form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id" role="search">
     <label class="sr-only" for="cse-search-input-box-id">
@@ -16,7 +16,7 @@
     </label>
     <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
   </form>
-  <div id="results" class="results">
+  <div id="results" class="results" role="status" aria-live="polite">
     <gcse:searchresults-only></gcse:searchresults-only>
   </div>
   {%- when "algolia" -%}

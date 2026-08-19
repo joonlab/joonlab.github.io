@@ -8,9 +8,10 @@ author_profile: false
 sidebar:
     nav: "counts"
 # search: false   # 검색해도 이 포스팅이 걸리지 않게 함.    
+excerpt: "Gemini API의 Search Grounding을 파이썬으로 쓰는 튜토리얼 — API 키 발급, google-generativeai 설치, 검색 기반 응답 생성과 grounding 파라미터 사용자 정의까지 다룹니다."
 ---
 
-# [Made by PARK JOON](https://bio.link/joonpark)
+# [Made by PARK JOON](https://bio.joonlab98.com)
 
 ---
 # [Gemini API 발급 방법](https://llm-project-joon.site/API_KEY_%E1%84%87%E1%85%A1%E1%86%AF%E1%84%80%E1%85%B3%E1%86%B8_%E1%84%87%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A5%E1%86%B8)

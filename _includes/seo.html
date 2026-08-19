@@ -15,7 +15,7 @@
 
 {%- assign seo_description = page.description | default: page.excerpt | default: site.description -%}
 {%- if seo_description -%}
-  {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}
+  {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip | truncate: 160 -%}{%- comment -%} 2026-08-19: excerpt 를 안 준 글이 본문 전체를 description 으로 뱉어 head 가 17KB 까지 부풀었다(babilong 2,547자 × 3곳). 상한을 건다. {%- endcomment -%}
 {%- endif -%}
 
 {%- assign author = page.author | default: page.authors[0] | default: site.author -%}
