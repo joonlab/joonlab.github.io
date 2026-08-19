@@ -338,6 +338,6 @@ defaults:
       toc: true
       toc_sticky: true
       toc_label: 목차
-      toc_icon: "fas fa-th-list"      
+      toc_icon: "th-list"     # 테마가 `fa-` 를 접두로 붙인다 → "fas fa-…" 를 주면 fa-fas 라는 없는 클래스가 생긴다      
 
 date_format: "%Y-%m-%d"    
